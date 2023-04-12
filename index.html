@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorAluraOneG5</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href=""><img src="img/Vector.svg" alt=""></a>
+    </nav>
+    <div class="container">
+        <div class="columna1">
+            <label for="texto-entrada" class="inline">Texto:</label>
+            <textarea id="texto-entrada" rows="21" cols="40"></textarea><br>
+            <div class="botones">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>  
+            </div>
+        </div>
+        <div class="columna2">
+            <label for="texto-salida" class="inline">Resultado:</label>
+            <textarea id="texto-salida" class="muñeco" rows="21" cols="40" readonly></textarea><br>
+        </div>
+</div>
+    <script src="js/app.js"></script>
+</body>
+</html>
