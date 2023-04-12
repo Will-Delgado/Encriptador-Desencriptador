@@ -4,10 +4,10 @@ function encriptar() {
     /* validamos si hay texto */
     if (textoOriginal == ''){
       /* si no hay texto pintamos el muñeco añadiendo la clase */
-      document.getElementById("texto-salida").classList.add('muñeco');
+      document.getElementById("texto-salida").classList.add('muneco');
     }else{
       /* aqui borramos la clase cuando ya hay texto */
-      document.getElementById("texto-salida").classList.remove('muñeco');
+      document.getElementById("texto-salida").classList.remove('muneco');
        const textoEncriptado = textoOriginal.value
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
