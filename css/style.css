@@ -52,7 +52,7 @@ textarea {
     margin: 10px;
   }
 .muneco{
-    background-image: url(/img/Muneco.svg);
+    background-image: url(img/Muneco.svg);
     width: 336px;
     height: 304px;
 }
@@ -69,7 +69,7 @@ textarea {
     margin-bottom: 10px;
   }
   .muneco{
-    background-image: url(./img/Muneco.svg);
+    background-image: url(img/Muneco.svg);
     width: 304px;
     height: 304px;
 }
