@@ -51,8 +51,8 @@ textarea {
     align-items: flex-start;
     margin: 10px;
   }
-.muñeco{
-    background-image: url(/img/Muñeco.svg);
+.muneco{
+    background-image: url(/img/Muneco.svg);
     width: 336px;
     height: 304px;
 }
@@ -68,8 +68,8 @@ textarea {
     flex-basis: 100%;
     margin-bottom: 10px;
   }
-  .muñeco{
-    background-image: url(/img/Muñeco.svg);
+  .muneco{
+    background-image: url(/img/Muneco.svg);
     width: 304px;
     height: 304px;
 }
