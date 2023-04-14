@@ -3,76 +3,83 @@ body{
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
  }
+
 nav{
   margin: 10px;
  }
-button{
-    width: 150px;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    
+
+ a{
+  font-size: 50px;
+  color: #0A3871;
+ }
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
 }
 
-textarea {
-    width: 50%;
-    margin-bottom: 10px;
-    resize: none;
-    color: black;
-  }
+button:hover{
+  color: #0A3871;
+  font-weight: bold;
+}
+
+textarea{
+  background: none;
+  border:none;
+  color: black;
+  outline: none;
+  resize: none;
+}
+textarea::placeholder{
+  color: black;
+  font-size: 15px;
+}
+
+.titulo {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .container {
-    width: 100%;
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    
-  }
-  
-  .columna1 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-  }
-  
-  .inline {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "columna1 columna2";
   }
 
-  .columna2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
+  
+.Columna1 {
+    justify-self: stretch; 
+    align-self: stretch; 
+    grid-area: Columna1; 
   }
+.columna2 {
+    justify-self: stretch; 
+    align-self: stretch; 
+    grid-area: columna2; 
+  }
+
+
 .muneco{
     background-image: url(../img/Muneco.svg);
     width: 336px;
     height: 304px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "columna1"
+    "columna2"
   }
-  
-  .columna1,
-  .columna2 {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-  }
-  .muneco{
-    background-image: url(../img/Muneco.svg);
-    width: 304px;
-    height: 304px;
 }
 
-}
 
