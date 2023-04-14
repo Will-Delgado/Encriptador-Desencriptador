@@ -9,20 +9,23 @@
 </head>
 <body>
     <nav>
-        <a href=""><img src="img/Vector.svg" alt=""></a>
+        <a href="">
+            <img src="img/Vector.svg" alt="">lura-One
+        </a>
     </nav>
+    <h2>Proyecto EncriptadorAluraOneG5</h2>
     <div class="container">
         <div class="columna1">
-            <label for="texto-entrada" class="inline">Texto:</label>
-            <textarea id="texto-entrada" rows="21" cols="40"></textarea><br>
-            <div class="botones">
+           <h3 class="titulo">Texto: </h3>
+            <textarea placeholder="Solo texto en minuscula, sin acento y sin caracteres especiales" id="texto-entrada" rows="21" cols="40"></textarea><br>
+            <div>
                 <button onclick="encriptar()">Encriptar</button>
                 <button onclick="desencriptar()">Desencriptar</button>  
             </div>
         </div>
         <div class="columna2">
-            <label for="texto-salida" class="inline">Resultado:</label>
-            <textarea id="texto-salida" class="muneco" rows="21" cols="40" readonly></textarea><br>
+            <h3 class="titulo">Resultado: </h3>
+            <textarea placeholder="No hay texto, ingresa uno" id="texto-salida" class="muneco" rows="21" cols="40" readonly></textarea><br>
             <button onclick="copiarTexto()">Copiar Texto</button>
         </div>
 </div>
