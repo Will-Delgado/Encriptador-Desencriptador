@@ -30,3 +30,15 @@ function encriptar() {
       .replace(/ufat/g, "u");
     document.getElementById("texto-salida").value = textoDesencriptado;
   }
+/* funcion para copiar texto */
+  function copiarTexto() {
+    const textoSalida = document.getElementById("texto-salida");
+    /* utilizamos clipboar (api), con writeText para copiar el texto del elemento */
+    navigator.clipboard.writeText(textoSalida.value)
+      .then(() => {
+       alert('El texto ha sido copiado');
+      })
+      .catch(err => {
+        alert('Hubo error al copiar el texto: ', err);
+      });
+  }
